@@ -12,16 +12,16 @@ source:
   sha256: '{{ sha256 }}'
 
 build:
-  skip: True  # [not linux]
-  number: 1000
+  number: 1001
   entry_points:
     - distro = distro:main
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
 
