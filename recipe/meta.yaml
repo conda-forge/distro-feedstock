@@ -1,6 +1,6 @@
 {% set name = "distro" %}
-{% set version = "1.6.0" %}
-{% set sha256 = "83f5e5a09f9c5f68f60173de572930effbcc0287bb84fdc4426cb4168c088424" %}
+{% set version = "1.7.0" %}
+{% set sha256 = "151aeccf60c216402932b52e40ee477a939f8d58898927378a02abbe852c1c39" %}
 
 package:
   name: {{ name|lower }}
